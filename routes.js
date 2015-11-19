@@ -1,8 +1,7 @@
-var JSX = require('node-jsx').install(),
-    React = require('react'),
-    ReactDom = require('react-dom'),
-    ReactDomServer = require( 'react-dom/server' ),
-	SampleApp = require("./components/Sample.react");
+import React from 'react';
+import ReactDOM from "react-dom";
+import ReactDomServer from 'react-dom/server';
+import SampleApp from './components/Sample.js';
 
 module.exports = {
 
@@ -20,13 +19,6 @@ module.exports = {
             markup: markup,
             state: JSON.stringify( data )
         });
-		
-		/*
-		res.render('home', {
-	            markup: "",
-	            state: {}
-	        });
-	    */
 
     },
 

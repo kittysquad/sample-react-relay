@@ -1,8 +1,8 @@
-// Require our dependencies
-var express = require('express'),
-    exphbs = require('express-handlebars'),
-    http = require('http'),
-    routes = require('./routes');
+import express from 'express';
+import exphbs from 'express-handlebars';
+import http from 'http';
+import routes from './routes';
+
 
 // Create an express instance and set a port variable
 var app = express();
