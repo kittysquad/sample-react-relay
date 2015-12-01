@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import ReactDomServer from 'react-dom/server';
-import SampleApp from './components/Sample.js';
+//import SampleApp from './components/Sample.js';
 
 module.exports = {
 
     index: function(req, res) {
-
+        /*
     	var data = { msg:'HI~!' };
 
     	
@@ -14,10 +14,10 @@ module.exports = {
     		React.createElement( SampleApp, { data:data } )
     		);
 
-
+        */
         res.render('home', {
-            markup: markup,
-            state: JSON.stringify( data )
+            markup: '',
+            state: ''
         });
 
     },
