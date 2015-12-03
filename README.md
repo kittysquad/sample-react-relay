@@ -5,6 +5,8 @@
 
 ```
 npm install
+mkdir lib
+mkdir lib/data
 ```
 
 ## Running
