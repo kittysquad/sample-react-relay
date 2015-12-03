@@ -23,7 +23,7 @@ var app = (0, _express2['default'])();
 
 // We respond to all GraphQL requests from `/graphql` using the
 // `express-graphql` middleware, which we pass our schema to.
-app.use('/graphql', (0, _expressGraphql2['default'])({ schema: _dataSchema.schema, pretty: true }));
+app.use('/graphql', (0, _expressGraphql2['default'])({ schema: _dataSchema.schema, graphiql: true }));
 
 // Serve HTML
 app.get('/', function (req, res, next) {

@@ -6,6 +6,7 @@ import ReactDOMServer from 'react-dom/server';
 import Relay from 'react-relay';
 import rootContainerProps from './rootContainerProps';
 
+
 const GRAPHQL_URL = `http://localhost:8080/graphql`;
 
 Relay.injectNetworkLayer(new Relay.DefaultNetworkLayer(GRAPHQL_URL));

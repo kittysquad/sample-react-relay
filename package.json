@@ -10,7 +10,7 @@
     "build": "npm run build:schema && npm run build:src && npm run build:app",
     "build:schema": "babel-node --optional es7.asyncFunctions ./utils/updateSchema.js",
     "build:src": "babel --stage 1 --plugins ./utils/babelRelayPlugin src --out-dir lib",
-    "build:app": "webpack && npm run build:ugly",
+    "build:app": "webpack",
     "build:ugly": "uglifyjs public/js/app.js --compress --mangle -o public/js/app.js ",
     "watch:schema": "onchange src/data/schema.js -- npm run build:schema",
     "watch:src": "onchange src/**/*.js -- npm run build:src && npm run build:app",

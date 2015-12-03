@@ -1,9 +1,7 @@
 import App from './components/App';
-import StarWarsAppHomeRoute from './routes/StarWarsAppHomeRoute';
+import Route from './routes/route';
 
 export default {
     Component: App,
-    route: new StarWarsAppHomeRoute({
-        factionNames: ['empire', 'rebels']
-    }),
+    route: new Route(),
 };

@@ -10,7 +10,7 @@ var app = express();
 
 // We respond to all GraphQL requests from `/graphql` using the
 // `express-graphql` middleware, which we pass our schema to.
-app.use('/graphql', graphQLHTTP({schema: schema, pretty: true}));
+app.use('/graphql', graphQLHTTP({schema: schema, graphiql: true}));
 
 // Serve HTML
 app.get('/', (req, res, next) => {
@@ -22,5 +22,5 @@ app.use("/", express.static( __dirname + "/../public/"));
 
 
 app.listen( APP_PORT, function() { 
-	console.log('Listening on '+APP_PORT+'...') 
+	console.log('Listening on '+APP_PORT+'...');
 });
